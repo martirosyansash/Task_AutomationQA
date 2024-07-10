@@ -1,0 +1,16 @@
+{
+  "name": "AutomationQATask",
+  "version": "0.0.1",
+  "private":false,
+  "description": "TaskAQA",
+  "devDependencies": {
+    "@wdio/cli": "^8.39.1",
+    "@wdio/local-runner": "^8.39.1",
+    "@wdio/mocha-framework": "^8.39.0",
+    "@wdio/spec-reporter": "^8.39.0",
+    "@wdio/visual-service": "^5.1.0"
+  },
+  "scripts": {
+    "test": "wdio run src/config/wdio.conf.js"
+  }
+}
