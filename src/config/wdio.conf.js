@@ -21,7 +21,7 @@ exports.config = {
     // of the config file unless it's absolute.
     //
     specs: [
-        './../tests/simple.tests.js'
+        './../tests/*spec.js'
     ],
     // Patterns to exclude.
     exclude: [
@@ -49,16 +49,19 @@ exports.config = {
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
     // https://saucelabs.com/platform/platform-configurator
     //
-    capabilities: [{
-        browserName: 'chrome',
-        maxInstances: 5,
-        acceptInsecureCerts: true
-    }, {
+    capabilities: [
+    {
 
         browserName: 'firefox',
         maxInstances: 5,
         acceptInsecureCerts: true
-    }],
+    },
+   {
+        browserName: 'chrome',
+        maxInstances: 5,
+        acceptInsecureCerts: true
+    }
+    ],
     //
     // ===================
     // Test Configurations
